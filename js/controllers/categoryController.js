@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
     init(); //Este método permite cargar las categorías en la tabla
 
+    //Acción cuando el boyón de Agregar Nueva categoria es presionado
     btnAdd.addEventListener("click", ()=>{
         form.reset();
         form.categoryId.value = ""; //No enviamos ID, ya que estamos agregando
