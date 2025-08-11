@@ -14,11 +14,15 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
     init(); //Este método permite cargar las categorías en la tabla
 
-    //Acción cuando el boyón de Agregar Nueva categoria es presionado
+    //Acción cuando el boyón de Agregar Nueva categoria es presionado se abre el modal
     btnAdd.addEventListener("click", ()=>{
         form.reset();
         form.categoryId.value = ""; //No enviamos ID, ya que estamos agregando
         lblModal.textContent = "Agregar categoría"
         modal.show();
+    });
+
+    form.addEventListener("submit", (e) => {
+        e.preventDefault(); //Evitamos que el formulario se envíe al hacer "submit"
     });
 });
