@@ -60,9 +60,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 const tr = document.createElement("tr"); //Se crea el elemento con JS
                 tr.innerHTML = `
                     <td>${category.idCategoria}</td>
-                    <td>${cat.nombreCategoria}</td>
-                    <td>${cat.descripcion || ""}</td>
-                    <td>${cat.fechaCreacion || ""}</td>
+                    <td>${category.nombreCategoria}</td>
+                    <td>${category.descripcion || ""}</td>
+                    <td>${category.fechaCreacion || ""}</td>
                     <td>
                         <button class="btn btn-sm btn-outline-secondary edit-btn">
                         <svg xmlns="http://www.w3.org/2000/ svg" width="20" height="20"
